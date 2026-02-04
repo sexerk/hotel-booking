@@ -11,10 +11,25 @@ dependencies = [
     "django (>=6.0.1,<7.0.0)",
     "djangorestframework (>=3.16.1,<4.0.0)",
     "psycopg2-binary (>=2.9.11,<3.0.0)",
-    "pytest-django (>=4.11.1,<5.0.0)"
+    "pytest-django (>=4.11.1,<5.0.0)",
+    "python-dotenv (>=1.0.0,<2.0.0)"
 ]
 
+#ruff = "^0.9.6"
+#ruff-format = "^0.9.6"
+#mypy = "^1.15.0"
+#pre-commit = "^3.7.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+#[tool.ruff]
+#line-length = 88
+#
+#[tool.ruff.lint]
+#select = ["E", "W", "F", "I"]
+#
+#[tool.mypy]
+#python_version = "3.13"
+#ignore_missing_imports = true
