@@ -1,8 +1,9 @@
+from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from django.shortcuts import get_object_or_404
-from .models import Room, Booking
-from .serializers import RoomSerializer, BookingSerializer
+
+from .models import Booking, Room
+from .serializers import BookingSerializer, RoomSerializer
 
 
 @api_view(["POST"])

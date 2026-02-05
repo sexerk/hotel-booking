@@ -1,5 +1,6 @@
 from django.test import TestCase
-from .services import create_room, create_booking  # Исправленные имена здесь
+
+from .services import create_booking, create_room  # Исправленные имена здесь
 
 
 class HotelBookingTest(TestCase):
